@@ -1,0 +1,61 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-test-product",
+      "blocks": {
+        "025bb676-64d6-401a-af2d-532231925ec1": {
+          "type": "shipping_notice_block",
+          "settings": {
+            "shipping_notice_text": "This is Shipping"
+          }
+        },
+        "25469ca3-551d-4775-9eee-b845137ad344": {
+          "type": "tax_notice_block",
+          "settings": {
+            "tax_notice_text": "this is Tax"
+          }
+        },
+        "f2377b23-2c18-4e42-b628-e3277f9ea98f": {
+          "type": "product_price_block",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "025bb676-64d6-401a-af2d-532231925ec1",
+        "25469ca3-551d-4775-9eee-b845137ad344",
+        "f2377b23-2c18-4e42-b628-e3277f9ea98f"
+      ],
+      "settings": {
+        "show_reviews": false
+      }
+    },
+    "second": {
+      "type": "main-test-product",
+      "blocks": {
+        "2d9397b0-ef57-48f4-b6f9-0068c40e7def": {
+          "type": "tax_notice_block",
+          "settings": {
+            "tax_notice_text": "NO Way, THis is TAx"
+          }
+        },
+        "20815769-47f8-4ffb-b483-5bc26a35f17c": {
+          "type": "shipping_notice_block",
+          "settings": {
+            "shipping_notice_text": "Ship with ME NOt the Other  Guy"
+          }
+        }
+      },
+      "block_order": [
+        "2d9397b0-ef57-48f4-b6f9-0068c40e7def",
+        "20815769-47f8-4ffb-b483-5bc26a35f17c"
+      ],
+      "settings": {
+        "show_reviews": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "second"
+  ]
+}
