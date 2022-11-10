@@ -27,7 +27,9 @@
         },
         "variant_picker": {
           "type": "variant_picker",
-          "settings": {}
+          "settings": {
+            "picker_type": "button"
+          }
         },
         "quantity_selector": {
           "type": "quantity_selector",
@@ -35,7 +37,9 @@
         },
         "buy_buttons": {
           "type": "buy_buttons",
-          "settings": {}
+          "settings": {
+            "show_dynamic_checkout": true
+          }
         },
         "description": {
           "type": "description",
@@ -57,15 +61,75 @@
         "description",
         "share"
       ],
-      "settings": {}
+      "settings": {
+        "enable_sticky_info": true,
+        "enable_video_looping": false
+      }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {}
+    "20fea0ed-ff8f-4a9d-a1e5-3072db58f07b": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16872484602152__20fea0ed-ff8f-4a9d-a1e5-3072db58f07b-166804352971964a9e-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/farmer.png",
+            "title": "Direct Relations to Farmers",
+            "text": "<p>Id volutpat lacus laoreet non curabitur. Dolor purus non enim praesent elementum. Convallis posuere morbi leo urna molestie at elementum eu facilisis. Duis convallis convallis tellus id interdum velit laoreet id. <\/p>"
+          }
+        },
+        "template--16872484602152__20fea0ed-ff8f-4a9d-a1e5-3072db58f07b-166804352971964a9e-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/coffee-plant.png",
+            "title": "Plant a Tree for 3rd Order",
+            "text": "<p>Tellus integer feugiat scelerisque varius morbi enim nunc. Lacus sed viverra tellus in. Et malesuada fames ac turpis egestas maecenas pharetra.  Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. Arcu bibendum at varius vel. <\/p>"
+          }
+        },
+        "template--16872484602152__20fea0ed-ff8f-4a9d-a1e5-3072db58f07b-166804352971964a9e-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/roaster.png",
+            "title": "Roasted by Hand in FL",
+            "text": "<p>Cras ornare arcu dui vivamus arcu. Montes nascetur ridiculus mus mauris vitae ultricies leo. Risus sed vulputate odio ut enim. Sit amet nisl purus in. At augue eget arcu dictum varius duis at. Elementum integer enim neque volutpat ac. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16872484602152__20fea0ed-ff8f-4a9d-a1e5-3072db58f07b-166804352971964a9e-0",
+        "template--16872484602152__20fea0ed-ff8f-4a9d-a1e5-3072db58f07b-166804352971964a9e-1",
+        "template--16872484602152__20fea0ed-ff8f-4a9d-a1e5-3072db58f07b-166804352971964a9e-2"
+      ],
+      "settings": {
+        "title": "Our Promises ⭐",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "2dc44b48-2f5f-440e-b84b-fa4bc5b1a2ed": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "You may also like 💖",
+        "collection": "coffee",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
+      }
     }
+    
   },
   "order": [
     "main",
-    "product-recommendations"
+    "20fea0ed-ff8f-4a9d-a1e5-3072db58f07b",
+    "2dc44b48-2f5f-440e-b84b-fa4bc5b1a2ed"
   ]
 }
