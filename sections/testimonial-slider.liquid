@@ -1,0 +1,54 @@
+<div class="review-slider">
+    {% for block in section.blocks %}
+        <div class="review-box">
+            <img class="quotes" src="{{ 'quotes.svg' | asset_url }}"/>
+            <div class="review-text">
+                {{ block.settings.testimonial_text }}
+            </div>
+            <img class="user-pic" src="{{ block.settings.testimonial_pic | img_url: '450x450', crop: 'center' }}"/>
+            <h4 class="user-name">{{ block.settings.testimonial_name }}</h4>
+        </div>
+    {% endfor%}
+</div>
+
+{% schema %}
+{
+    "name":"testimonials slider",
+        "settings":[
+            {
+                "id":"header",
+                "label":"Enter header",
+                "type":"text"
+            }
+        ],
+        "blocks":[
+            {
+                "name":"Testimonial",
+                "type":"testimonial_card",
+                "settings":[
+                     {
+                    "id":"testimonial_text",
+                    "label":"enter testimonial text",
+                    "type":"textarea"
+                    },
+                    {
+                    "id":"testimonial_pic",
+                    "label":"select user picture",
+                    "type":"image_picker"
+                    },
+                    {
+                    "id":"testimonial_name",
+                    "label":"enter user name",
+                    "type":"text"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+    {
+      "name": "Testimonial Slider"
+    }
+  ]
+}
+{% endschema %}
+

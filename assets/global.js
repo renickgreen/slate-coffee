@@ -1,3 +1,31 @@
+$(document).ready(function(){
+  $('.review-slider').slick({
+    dots: true,
+infinite: true,
+speed: 300,
+slidesToShow: 3,
+slidesToScroll: 3,
+responsive: [
+{
+breakpoint: 989,
+settings: {
+slidesToShow: 2,
+slidesToScroll: 2
+}
+},
+{
+breakpoint: 750,
+settings: {
+slidesToShow: 1,
+slidesToScroll: 1
+}
+}
+]
+  });
+});
+
+//Above is Custome Slider
+
 function getFocusableElements(container) {
   return Array.from(
     container.querySelectorAll(
