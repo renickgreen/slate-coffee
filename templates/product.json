@@ -48,6 +48,25 @@
         "share": {
           "type": "share",
           "settings": {}
+        },
+        "9b3e18c3-67de-4e46-bd1d-0bf6cd3d982f": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping times",
+            "content": "<p>{{ product.metafields.custom.shipping.value }}<\/p>",
+            "page": "",
+            "icon": "truck"
+          }
+        },
+        "e365a8ae-6076-4c5b-8e38-9f7b712fd844": {
+          "type": "coffee_info",
+          "settings": {
+            "taste": "{{ product.metafields.custom.taste.value }}",
+            "type": "{{ product.metafields.custom.type.value }}",
+            "origin": "{{ product.metafields.custom.origin.value }}",
+            "strength": "{{ product.metafields.custom.strength.value }}",
+            "acidity": "{{ product.metafields.custom.acidity.value }}"
+          }
         }
       },
       "block_order": [
@@ -59,7 +78,9 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "9b3e18c3-67de-4e46-bd1d-0bf6cd3d982f",
+        "e365a8ae-6076-4c5b-8e38-9f7b712fd844"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -125,7 +146,6 @@
         "show_vendor": false
       }
     }
-    
   },
   "order": [
     "main",

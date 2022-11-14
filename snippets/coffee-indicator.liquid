@@ -1,0 +1,7 @@
+            {% for bean in (1..5) %}
+              {% if bean <= level %}
+                <img src="{{ 'coffee-filled.png' | asset_url }}"/>
+              {% else %}
+                <img src="{{ 'coffe-empty.png' | asset_url }}"/>
+              {% endif %}
+                {% endfor%}

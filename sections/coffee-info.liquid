@@ -1,0 +1,64 @@
+Coffee Info Is Great!
+            <div class="product__accordion accordion" {{ block.shopify_attributes }}>
+              <details>
+                <summary>
+                  <div class="summary__title">
+                    {% render 'icon-accordion', icon: block.settings.icon %}
+                    <h2 class="h4 accordion__title">
+                      This is my fight song!
+                    </h2>
+                  </div>
+                  {% render 'icon-caret' %}
+                </summary>
+                <div class="accordion__content rte">
+                  {{ block.settings.content }}
+                  {{ block.settings.page.content }}
+                      <table class="table-container">
+        <tr>
+            <td class="head bold">Taste</td>
+            <td>Hazelnut, Sweet Fruits</td>
+        </tr>
+        <tr>
+            <td class="head bold">Strength</td>
+            <td class="valueOfFive">
+                <img src="{{ 'coffee-filled.png' | asset_url }}"/>
+                <img src="{{ 'coffee-filled.png' | asset_url }}"/>
+                <img src="{{ 'coffee-filled.png' | asset_url }}"/>
+                <img src="{{ 'coffe-empty.png' | asset_url }}"/>
+                <img src="{{ 'coffe-empty.png' | asset_url }}"/>
+            </td>
+        </tr>
+        <tr>
+            <td class="head bold">Acidity</td>
+            <td class="valueOfFive">
+                <img src="{{ 'coffee-filled.png' | asset_url }}"/>
+                <img src="{{ 'coffee-filled.png' | asset_url }}"/>
+                <img src="{{ 'coffe-empty.png' | asset_url }}"/>
+                <img src="{{ 'coffe-empty.png' | asset_url }}"/>
+                <img src="{{ 'coffe-empty.png' | asset_url }}"/>
+            </td>
+        </tr>
+        <tr>
+            <td class="head bold">Type</td>
+            <td> 100% Arabica, Single Origin</td>
+        </tr>
+        <tr>
+            <td class="head bold">Origin</td>
+            <td>Ethiopia</td>
+        </tr>
+    </table>
+                </div>
+              </details>
+            </div>
+
+{% schema %}
+{
+    "name":"Coffee Info",
+    "settings":[],
+    "presets":[
+        {
+            "name":"Coffee Info"
+        }
+    ]
+}   
+{% endschema %}

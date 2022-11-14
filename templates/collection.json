@@ -1,15 +1,75 @@
 {
   "sections": {
+    "1ded554b-4444-4903-bb7d-80ec81b4748a": {
+      "type": "testimonial-slider",
+      "blocks": {
+        "284bf69e-751d-4811-b2f5-76ae09c9222c": {
+          "type": "testimonial_card",
+          "settings": {
+            "testimonial_text": "This is the Testimonial",
+            "testimonial_pic": "shopify:\/\/shop_images\/woman-infront-of-tree-with-berries.jpeg",
+            "testimonial_name": "Bob Marley"
+          }
+        },
+        "366fcacd-3010-415b-9d6f-ad93e4506a55": {
+          "type": "testimonial_card",
+          "settings": {
+            "testimonial_text": "This is the Best Coffee Ever!  You guys Rock!  Never going back to foldger or that mermaid brand ever again!",
+            "testimonial_pic": "shopify:\/\/shop_images\/farmer.png",
+            "testimonial_name": "Farmer Joe"
+          }
+        },
+        "8b35065b-468c-419b-94e7-f196183bd70b": {
+          "type": "testimonial_card",
+          "settings": {
+            "testimonial_text": "Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Risus commodo viverra maecenas accumsan lacus vel.",
+            "testimonial_pic": "shopify:\/\/shop_images\/about_1.jpg",
+            "testimonial_name": "Beth McDonald"
+          }
+        },
+        "c2d35e78-2951-48b0-a4c4-3ad3ae77d256": {
+          "type": "testimonial_card",
+          "settings": {
+            "testimonial_text": "Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Justo laoreet sit amet cursus sit amet dictum sit amet. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla.",
+            "testimonial_pic": "shopify:\/\/shop_images\/black-and-white-portrait-mens-fashion.jpg",
+            "testimonial_name": "Austin Tagious"
+          }
+        }
+      },
+      "block_order": [
+        "284bf69e-751d-4811-b2f5-76ae09c9222c",
+        "366fcacd-3010-415b-9d6f-ad93e4506a55",
+        "8b35065b-468c-419b-94e7-f196183bd70b",
+        "c2d35e78-2951-48b0-a4c4-3ad3ae77d256"
+      ],
+      "settings": {
+        "header": ""
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
-      "settings": {}
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false
+      }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "settings": {}
+      "settings": {
+        "products_per_page": 16,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "collapse_on_larger_devices": false
+      }
     }
   },
   "order": [
+    "1ded554b-4444-4903-bb7d-80ec81b4748a",
     "banner",
     "product-grid"
   ]

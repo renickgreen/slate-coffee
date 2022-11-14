@@ -2113,6 +2113,7 @@ details-disclosure > details {
   word-break: break-word;
 }
 
+/*****************Customer CSS***************************/
 /*Testimonial Slider properties*/
 
 .review-slider{
@@ -2149,4 +2150,22 @@ details-disclosure > details {
 .user-name{
   text-align: center;
   margin: 5px;
+}
+
+/* Coffee Info */
+
+table, td{
+  margin: 0px;
+  padding: 0px;
+  border-collapse: collapse;
+}
+
+td{
+  width: 50%;
+  padding: 3%;
+  border: 2px solid lightgray;
+}
+
+.bold{
+  font-weight: bold;
 }
